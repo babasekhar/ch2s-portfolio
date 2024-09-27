@@ -26,6 +26,7 @@ const Home = () => {
               <Button 
               variant="outline" 
               size="lg" 
+              // src = "src/assets/Baba_Sekhar.pdf"
               className="uppercase flex items-center gap-2">
                 <span>Download CV</span>
                 <FiDownload className="text-xl" />
