@@ -6,12 +6,11 @@ import Header from "@/components/Header";
 import PageTransition from "@/components/PageTransitions";
 import StairTransition from "@/components/StairTransition";
 
-// ... rest of your layout code
-
-const jetbrainsMono = JetBrains_Mono({ 
-  subsets: ["latin"], 
-  weight: ["100", "200","300","400","500","600","700","800"],
-  variable: "--font-jetbrainsMono" 
+// JetBrains Mono font setup
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
+  variable: "--font-jetbrainsMono",
 });
 
 export const metadata = {
@@ -24,10 +23,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={jetbrainsMono.variable}>
         <Header />
+        {/* Uncomment the following if you need StairTransition */}
         {/* <StairTransition /> */}
         <PageTransition>{children}</PageTransition>
-        
-        </body>
+      </body>
     </html>
   );
 }
